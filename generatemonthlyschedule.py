@@ -1,21 +1,11 @@
-from lxml import html, etree
-import requests
-import re
 import os
 import csv
 import sys
-import argparse
-import json
-import datetime
-import selenium
-from datetime import datetime
-from pathlib import Path
-from bs4 import BeautifulSoup
-import re
 
 schedule_data = []
 new_data = []
 area_dict = {} 
+stage = input("Please input stage:")
 
 def itterate():
     #read area data
@@ -43,8 +33,7 @@ def itterate():
                 new_temp.append(row[4])
                 schedule_data.append(new_temp)
             i = i + 1
-
-    stage = 'stage1'
+    global stage
     stage = stage.strip('stage')
     for row in schedule_data:
         if(int(stage) >= int(row[3])):
@@ -79,39 +68,5 @@ def itterate():
         myfinal = myfinal +  res_text + '\n\n'
         
     f.write(myfinal)
-    f.close() 
-
-    # print(new_data)
-
-    # f.close()
-	# try:
-	# 	m = re.search(r'(.+)@(.+)\.(.+)', companyname)
-	# 	if m:
-	# 		appellation = m.groups()[1]
-	# except:
-	#    print("No email format")
-	#    return
-	# print("Fetching job details for {}.".format(appellation))
-	# job_litsting_url = 'https://www.glassdoor.com/Job/jobs.htm'
-	# parse(appellation, job_litsting_url)
-	# scraped_data = getDescriptions(job_listings)
-
-	# print("Writing data to output file '{}/{}s-job-results.csv'".format(name,appellation))
-	# print("*********************Report**********************")
-	# print("Company Name: {}".format(appellation))
-	# print("Current Job Numbers: {}".format(len(scraped_data)))
-	# print("Scrape Date: {}".format(datetime.now().strftime("%H:%M:%S,%m/%d/%Y")))
-
-	# Path('{}'.format(name)).mkdir(parents=True, exist_ok=True)
-
-	# with open('{}/{}s-job-results.csv'.format(name,appellation), 'wb') as csvfile:
-	# 	fieldnames = ['Name', 'Company', 'State', 'City', 'Salary', 'Location', 'Description','Url']
-	# 	writer = csv.DictWriter(csvfile, fieldnames=fieldnames,quoting=csv.QUOTE_ALL)
-	# 	writer.writeheader()
-	# 	if scraped_data:
-	# 		for data in scraped_data:
-	# 			writer.writerow(data)
-	# 	else:
-	# 		print("Hey {}! Your search for {}s, it does not match any jobs".format(name,appellation))
-
+    f.close()
 itterate()
