@@ -4,10 +4,30 @@ import sys
 
 schedule_data = []
 new_data = []
-area_dict = {} 
+new_date = []
+new_hour = []
+area_dict = {}
 
 def itterate():
+
     stage = '5'
+    start_date_year = '2020'
+    start_date_month = '1'
+    start_date_day = '10'
+    start_time_hour = '0'
+    start_time_min = '00'
+
+    end_date_year = '2020'
+    end_date_month = '1'
+    end_date_day = '21'
+    end_time_hour = '0'
+    end_time_min = '00'
+
+    daily_breaks_start_hour = '9'
+    daily_breaks_start_min = '00'
+    daily_breaks_end_hour = '18'
+    daily_breaks_end_min = '00'
+
     #read area data
     temp = []
     f = open("area.ini", "r")
@@ -18,7 +38,7 @@ def itterate():
         value = str.split(',')[1]
         area_dict[key] = value
     f.close()
-     
+
     #read csv data
     with open("schedule.csv", 'r') as file:
         csv_reader = csv.reader(file)
@@ -33,23 +53,38 @@ def itterate():
                 new_temp.append(row[4])
                 schedule_data.append(new_temp)
             i = i + 1
-            
+
     for row in schedule_data:
         if(int(stage) >= int(row[3])):
             new_data.append(row)
 
+    for row in new_data:
+        if(int(start_date_day) <= int(row[0]) and int(end_date_day) >= int(row[0])):
+            new_date.append(row)
+
+    for row in new_date:
+        if(int(daily_breaks_start_hour) >= int(row[1].split(':')[0])):
+            row[1] = daily_breaks_start_hour + ':' + daily_breaks_start_min
+            if(int(daily_breaks_start_hour) >=  int(row[2].split(':')[0])):
+                continue
+        if(int(daily_breaks_end_hour) <= int(row[2].split(':')[0])):
+            row[2] = daily_breaks_end_hour + ':' + daily_breaks_end_min
+            if(int(daily_breaks_end_hour) <= int(row[1].split(':')[0])):
+                continue
+        new_hour.append(row)
+    
     #Make result data        
     res_temp = []
     for i in range(1,31):
         res_new_temp = []
-        for row in new_data:
+        for row in new_hour:
             if i == int(row[0]):
                 res_new_temp.append(row)
         
         if res_new_temp:
             res_temp.append(res_new_temp)
 
-    f = open("generatemonthlyschedule.txt","w")
+    f = open("generaterange.txt","w")
     myfinal = ''    
     for row in res_temp:
         res_text = row[0][0] + '/02/2020'
