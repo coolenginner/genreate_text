@@ -84,7 +84,7 @@ def itterate():
         if res_new_temp:
             res_temp.append(res_new_temp)
 
-    f = open("generaterange.txt","w")
+    f = open("generateoneday.txt","w")
     myfinal = ''    
     for row in res_temp:
         res_text = row[0][0] + '/02/2020'
