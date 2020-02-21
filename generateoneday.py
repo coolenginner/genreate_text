@@ -63,14 +63,15 @@ def itterate():
             new_date.append(row)
 
     for row in new_date:
-        if(int(daily_breaks_start_hour) >= int(row[1].split(':')[0])):
+        if(int(daily_breaks_start_hour) >= int(row[1].rsplit(':', 1)[0])):
             row[1] = daily_breaks_start_hour + ':' + daily_breaks_start_min
-            if(int(daily_breaks_start_hour) >=  int(row[2].split(':')[0])):
+            if(int(daily_breaks_start_hour) >=  int(row[2].rsplit(':', 1)[0])):
                 continue
-        if(int(daily_breaks_end_hour) <= int(row[2].split(':')[0])):
+        if(int(daily_breaks_end_hour) <= int(row[2].rsplit(':', 1)[0])):
             row[2] = daily_breaks_end_hour + ':' + daily_breaks_end_min
-            if(int(daily_breaks_end_hour) <= int(row[1].split(':')[0])):
+            if(int(daily_breaks_end_hour) <= int(row[1].rsplit(':', 1)[0])):
                 continue
+        if(int(row[2].rsplit(':', 1)[0]) == 0):continue
         new_hour.append(row)
     
     #Make result data        
@@ -94,7 +95,11 @@ def itterate():
             for col in row:
                 if(key in col[4]):
                     if i == 0:res_text = res_text + col[1] + '-' + col[2]
-                    else:res_text = res_text + '&&' + col[1] + '-' + col[2]
+                    else:
+                        # print(res_text.split('-')[-1][:-3])
+                        if int(res_text.split('-')[-1][:-3])>=int(col[1].rsplit(':', 1)[0]):
+                            res_text = res_text.rsplit('-', 1)[0] + '-' + col[2]
+                        else: res_text = res_text + '&&' + col[1] + '-' + col[2]
                     i = i + 1
             if i == 0:res_text = res_text + 'No Loadshedding'
         print(res_text)

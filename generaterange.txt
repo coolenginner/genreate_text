@@ -1,10 +1,210 @@
-15/02/2020
-Jouberton Main:No Loadshedding
-Klerksdorp Munic:9:00-10:30&&10:00-12:30
+1/02/2020
+Jouberton Main:12:00-16:30
+Klerksdorp Munic:12:00-16:30
 Klerksdorp North:No Loadshedding
-Klerksdorp West:9:00-10:30&&10:00-12:30
-Orkney:9:00-10:30&&10:00-12:30
+Klerksdorp West:12:00-16:30
+Orkney:12:00-16:30
+Stilfontein:14:00-18:00
+Hartbeesfontein:10:00-14:30&&16:00-18:00
+Potch & Ikageng:10:00-14:30&&16:00-18:00
+
+2/02/2020
+Jouberton Main:14:00-18:00
+Klerksdorp Munic:No Loadshedding
+Klerksdorp North:12:00-16:30
+Klerksdorp West:No Loadshedding
+Orkney:No Loadshedding
+Stilfontein:12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+3/02/2020
+Jouberton Main:12:00-16:30
+Klerksdorp Munic:12:00-16:30
+Klerksdorp North:14:00-18:00
+Klerksdorp West:12:00-16:30
+Orkney:12:00-16:30
 Stilfontein:No Loadshedding
+Hartbeesfontein:16:00-18:00
+Potch & Ikageng:16:00-18:00
+
+4/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:14:00-18:00
+Klerksdorp North:12:00-16:30
+Klerksdorp West:14:00-18:00
+Orkney:14:00-18:00
+Stilfontein:9:00-10:30&&12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+5/02/2020
+Jouberton Main:9:00-10:30&&12:00-16:30
+Klerksdorp Munic:12:00-16:30
+Klerksdorp North:No Loadshedding
+Klerksdorp West:12:00-16:30
+Orkney:12:00-16:30
+Stilfontein:No Loadshedding
+Hartbeesfontein:16:00-18:00
+Potch & Ikageng:16:00-18:00
+
+6/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:No Loadshedding
+Klerksdorp North:9:00-10:30&&12:00-16:30
+Klerksdorp West:No Loadshedding
+Orkney:No Loadshedding
+Stilfontein:12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+7/02/2020
+Jouberton Main:12:00-16:30
+Klerksdorp Munic:9:00-10:30&&12:00-16:30
+Klerksdorp North:No Loadshedding
+Klerksdorp West:9:00-10:30&&12:00-16:30
+Orkney:9:00-10:30&&12:00-16:30
+Stilfontein:No Loadshedding
+Hartbeesfontein:16:00-18:00
+Potch & Ikageng:16:00-18:00
+
+8/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:No Loadshedding
+Klerksdorp North:12:00-16:30
+Klerksdorp West:No Loadshedding
+Orkney:No Loadshedding
+Stilfontein:12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+9/02/2020
+Jouberton Main:9:00-12:30
+Klerksdorp Munic:9:00-12:30
+Klerksdorp North:16:00-18:00
+Klerksdorp West:9:00-12:30
+Orkney:9:00-12:30
+Stilfontein:10:00-14:30&&16:00-18:00
+Hartbeesfontein:9:00-10:30&&12:00-16:30
+Potch & Ikageng:9:00-10:30&&12:00-16:30
+
+10/02/2020
+Jouberton Main:10:00-14:30&&16:00-18:00
+Klerksdorp Munic:16:00-18:00
+Klerksdorp North:9:00-12:30
+Klerksdorp West:16:00-18:00
+Orkney:16:00-18:00
+Stilfontein:9:00-12:30
 Hartbeesfontein:No Loadshedding
 Potch & Ikageng:No Loadshedding
+
+11/02/2020
+Jouberton Main:9:00-12:30
+Klerksdorp Munic:9:00-12:30
+Klerksdorp North:10:00-14:30&&16:00-18:00
+Klerksdorp West:9:00-12:30
+Orkney:9:00-12:30
+Stilfontein:16:00-18:00
+Hartbeesfontein:12:00-16:30
+Potch & Ikageng:12:00-16:30
+
+12/02/2020
+Jouberton Main:16:00-18:00
+Klerksdorp Munic:10:00-14:30&&16:00-18:00
+Klerksdorp North:9:00-12:30
+Klerksdorp West:10:00-14:30&&16:00-18:00
+Orkney:10:00-14:30&&16:00-18:00
+Stilfontein:9:00-12:30
+Hartbeesfontein:No Loadshedding
+Potch & Ikageng:No Loadshedding
+
+13/02/2020
+Jouberton Main:9:00-12:30
+Klerksdorp Munic:9:00-12:30
+Klerksdorp North:16:00-18:00
+Klerksdorp West:9:00-12:30
+Orkney:9:00-12:30
+Stilfontein:16:00-18:00
+Hartbeesfontein:12:00-16:30
+Potch & Ikageng:12:00-16:30
+
+14/02/2020
+Jouberton Main:16:00-18:00
+Klerksdorp Munic:16:00-18:00
+Klerksdorp North:9:00-12:30
+Klerksdorp West:16:00-18:00
+Orkney:16:00-18:00
+Stilfontein:9:00-12:30
+Hartbeesfontein:14:00-18:00
+Potch & Ikageng:14:00-18:00
+
+15/02/2020
+Jouberton Main:9:00-12:30
+Klerksdorp Munic:9:00-12:30
+Klerksdorp North:16:00-18:00
+Klerksdorp West:9:00-12:30
+Orkney:9:00-12:30
+Stilfontein:16:00-18:00
+Hartbeesfontein:12:00-16:30
+Potch & Ikageng:12:00-16:30
+
+16/02/2020
+Jouberton Main:16:00-18:00
+Klerksdorp Munic:16:00-18:00
+Klerksdorp North:9:00-12:30
+Klerksdorp West:16:00-18:00
+Orkney:16:00-18:00
+Stilfontein:9:00-12:30
+Hartbeesfontein:No Loadshedding
+Potch & Ikageng:No Loadshedding
+
+17/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:14:00-18:00
+Klerksdorp North:12:00-16:30
+Klerksdorp West:14:00-18:00
+Orkney:14:00-18:00
+Stilfontein:9:00-10:30&&12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+18/02/2020
+Jouberton Main:9:00-10:30&&12:00-16:30
+Klerksdorp Munic:12:00-16:30
+Klerksdorp North:No Loadshedding
+Klerksdorp West:12:00-16:30
+Orkney:12:00-16:30
+Stilfontein:No Loadshedding
+Hartbeesfontein:16:00-18:00
+Potch & Ikageng:16:00-18:00
+
+19/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:No Loadshedding
+Klerksdorp North:9:00-10:30&&12:00-16:30
+Klerksdorp West:No Loadshedding
+Orkney:No Loadshedding
+Stilfontein:12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
+
+20/02/2020
+Jouberton Main:12:00-16:30
+Klerksdorp Munic:9:00-10:30&&12:00-16:30
+Klerksdorp North:No Loadshedding
+Klerksdorp West:9:00-10:30&&12:00-16:30
+Orkney:9:00-10:30&&12:00-16:30
+Stilfontein:No Loadshedding
+Hartbeesfontein:16:00-18:00
+Potch & Ikageng:16:00-18:00
+
+21/02/2020
+Jouberton Main:No Loadshedding
+Klerksdorp Munic:No Loadshedding
+Klerksdorp North:12:00-16:30
+Klerksdorp West:No Loadshedding
+Orkney:No Loadshedding
+Stilfontein:12:00-16:30
+Hartbeesfontein:9:00-12:30
+Potch & Ikageng:9:00-12:30
 
