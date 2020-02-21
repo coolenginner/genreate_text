@@ -24,7 +24,7 @@ def itterate():
         csv_reader = csv.reader(file)
         i = 0
         for row in csv_reader:
-            if i != 0:
+            if i != 0 and row[4] != '':
                 new_temp = []
                 new_temp.append(row[0])
                 new_temp.append(row[1])
@@ -60,10 +60,9 @@ def itterate():
                 if(key in col[4]):
                     if i == 0:res_text = res_text + col[1] + '-' + col[2]
                     else:
-                        # print(res_text.split('-')[-1][:-3])
                         if int(res_text.split('-')[-1][:-3])>=int(col[1].rsplit(':', 1)[0]):
                             res_text = res_text.rsplit('-', 1)[0] + '-' + col[2]
-                        else: res_text = res_text + '&&' + col[1] + '-' + col[2]
+                        else: res_text = res_text + ' & ' + col[1] + '-' + col[2]
                     i = i + 1
             if i == 0:res_text = res_text + 'No Loadshedding'
         print(res_text)

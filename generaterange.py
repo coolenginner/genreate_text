@@ -13,13 +13,13 @@ def itterate():
     stage = '5'
     start_date_year = '2020'
     start_date_month = '1'
-    start_date_day = '1'
+    start_date_day = '21'
     start_time_hour = '0'
     start_time_min = '00'
 
     end_date_year = '2020'
     end_date_month = '1'
-    end_date_day = '21'
+    end_date_day = '22'
     end_time_hour = '0'
     end_time_min = '00'
 
@@ -44,7 +44,7 @@ def itterate():
         csv_reader = csv.reader(file)
         i = 0
         for row in csv_reader:
-            if i != 0:
+            if i != 0 and row[4] != '':
                 new_temp = []
                 new_temp.append(row[0])
                 new_temp.append(row[1])
@@ -63,18 +63,15 @@ def itterate():
             new_date.append(row)
 
     for row in new_date:
-        if(int(daily_breaks_start_hour) >= int(row[1].rsplit(':', 1)[0])):
-            row[1] = daily_breaks_start_hour + ':' + daily_breaks_start_min
-            if(int(daily_breaks_start_hour) >=  int(row[2].rsplit(':', 1)[0])):
+        if(int(daily_breaks_start_hour) < int(row[1].rsplit(':', 1)[0])):
+            row[1] = daily_breaks_end_hour + ':' + daily_breaks_end_min
+            if(int(row[1].rsplit(':', 1)[0]) > int(row[2].rsplit(':', 1)[0])):
                 continue
-        if(int(daily_breaks_end_hour) <= int(row[2].rsplit(':', 1)[0])):
-            row[2] = daily_breaks_end_hour + ':' + daily_breaks_end_min
-            if(int(daily_breaks_end_hour) <= int(row[1].rsplit(':', 1)[0])):
-                continue
-        if(int(row[2].rsplit(':', 1)[0]) == 0):continue
-
+        else:
+            if(int(daily_breaks_end_hour)  < int(row[2].rsplit(':', 1)[0])):
+                row[2] = daily_breaks_end_hour + ':' + daily_breaks_end_min
         new_hour.append(row)
-    
+
     #Make result data        
     res_temp = []
     for i in range(1,31):
@@ -100,7 +97,7 @@ def itterate():
                         # print(res_text.split('-')[-1][:-3])
                         if int(res_text.split('-')[-1][:-3])>=int(col[1].rsplit(':', 1)[0]):
                             res_text = res_text.rsplit('-', 1)[0] + '-' + col[2]
-                        else: res_text = res_text + '&&' + col[1] + '-' + col[2]
+                        else: res_text = res_text + ' & ' + col[1] + '-' + col[2]
                     i = i + 1
             if i == 0:res_text = res_text + 'No Loadshedding'
         print(res_text)
